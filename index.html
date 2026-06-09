@@ -4,14 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Pig + Si</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-    <script src="index.js"></script>
+    <!-- Top Navigation Bar -->
+    <nav class="nav-bar">
+      <div class="nav-content">
+        <h1 class="nav-title">Pig + Si</h1>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#blog">Blog</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-shell">
+      <div class="content">
+        <!-- Gallery Section with Featured Center & Side Images -->
+        <section id="gallery" class="gallery-section">
+          <!-- Featured Post (Center) -->
+          <div class="featured-container">
+            <div class="featured-date">June 9, 2026</div>
+            <a href="/posts/post1.html" class="featured-image-link">
+              <img src="image.png" alt="Lincoln Park Zoo" class="featured-image">
+            </a>
+            <h3 class="featured-title">Lincoln Park Zoo</h3>
+          </div>
+
+          <!-- Side Gallery -->
+          <div class="side-gallery">
+            <!-- Left Post -->
+            <div class="gallery-item left-item">
+              <div class="gallery-date">June 1, 2026</div>
+              <a href="post2.html" class="gallery-image-link">
+                <img src="https://via.placeholder.com/200x300?text=Post+2" alt="Recipes and rhythms" class="gallery-image">
+              </a>
+              <h4>Recipes &amp; rhythms</h4>
+            </div>
+
+            <!-- Right Post -->
+            <div class="gallery-item right-item">
+              <div class="gallery-date">May 25, 2026</div>
+              <a href="post3.html" class="gallery-image-link">
+                <img src="https://via.placeholder.com/200x300?text=Post+3" alt="Mountain adventures" class="gallery-image">
+              </a>
+              <h4>Mountain adventures</h4>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="about-card">
+          <h2>About us</h2>
+          <p>We are building a space for two people who love simple design, thoughtful moments, and family time. This site keeps the text centered, the colors calm, and the layout uncluttered.</p>
+        </section>
+
+        <section id="blog" class="blog">
+          <h2>All Posts</h2>
+          <div class="posts">
+            <article class="post">
+              <time datetime="2026-06-09">June 9, 2026</time>
+              <h3>Weekend reflections from home</h3>
+              <div class="post-content">
+                <p>Together we spent the morning planning our next little adventure, swapping ideas over coffee, and writing a fresh note for the family blog.</p>
+              </div>
+              
+              <div class="post-section">
+                <h4 class="section-title">📺 Things we're watching</h4>
+                <ul class="section-list">
+                  <li>A new series about travel and discovery</li>
+                  <li>Documentaries on sustainable living</li>
+                </ul>
+              </div>
+              
+              <div class="post-section">
+                <h4 class="section-title">💝 Things we recommend</h4>
+                <ul class="section-list">
+                  <li>A cozy new café downtown</li>
+                  <li>A book about slow living and intentionality</li>
+                </ul>
+              </div>
+              
+              <div class="post-links">
+                <a href="post1.html">Read more</a>
+              </div>
+            </article>
+            
+            <article class="post">
+              <time datetime="2026-06-01">June 1, 2026</time>
+              <h3>Recipes, rhythms, and shared stories</h3>
+              <div class="post-content">
+                <p>She cooked, I listened, and we wrote about the small, warm habits that make our days feel grounded and bright.</p>
+              </div>
+              
+              <div class="post-section">
+                <h4 class="section-title">📺 Things we're watching</h4>
+                <ul class="section-list">
+                  <li>Cooking shows and culinary documentaries</li>
+                  <li>Films about family and connection</li>
+                </ul>
+              </div>
+              
+              <div class="post-section">
+                <h4 class="section-title">💝 Things we recommend</h4>
+                <ul class="section-list">
+                  <li>Fresh herbs from the farmers market</li>
+                  <li>Handwritten recipe journals</li>
+                </ul>
+              </div>
+              
+              <div class="post-links">
+                <a href="post2.html">Read more</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <footer>
+          <p>&copy; 2026 Pig + Si. All moments preserved.</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
