@@ -202,7 +202,7 @@ body {
 }
 
 .featured-title {
-  margin-top: 16px;
+  margin-top: 6px;
   font-size: 18px;
   font-weight: 600;
   color: var(--text);
@@ -240,8 +240,8 @@ body {
 
 .gallery-image-link {
   display: block;
-  border: 2px solid var(--border-green);
-  background: var(--outline-green);
+  border: 2px solid var(--border-blue);
+  background: var(--outline-blue);
   transition: all 0.3s ease;
   cursor: pointer;
 }

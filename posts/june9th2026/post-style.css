@@ -1,0 +1,158 @@
+/* Post-specific styling with Patel Orange & Blue theme */
+
+:root {
+  --patel-orange: #FF8C42;
+  --patel-blue: #003D7A;
+  --patel-light-blue: #E8F4FF;
+  --patel-light-orange: #FFF3E8;
+  --text-dark: #1A1A1A;
+}
+
+/* Google Fonts for Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'BBH Bartle', cursive;
+  color: var(--patel-blue);
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: var(--patel-orange);
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 1.2em 0 0.5em 0;
+}
+
+h4, h5, h6 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+a {
+  font-family: "Alien Block", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--patel-orange);
+}
+
+/* Post Header Styling */
+.post-header {
+  padding: 0px;
+}
+
+.post-date {
+  color: var(--patel-orange);
+  font-weight: 700;
+  font-size: 0.95em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.post-title {
+  color: var(--patel-blue);
+  line-height: 1.2;
+}
+
+/* Featured Image */
+.post-featured-image {
+  border: 3px solid var(--patel-orange);
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.2);
+}
+
+/* Post Body */
+.post-body {
+  background: #FFFFFF;
+  color: var(--text-dark);
+}
+
+.post-main-content {
+  color: #424242;
+  font-size: 1.05em;
+}
+
+.post-main-content p {
+  color: #555555;
+  margin-bottom: 1.5em;
+}
+
+/* Section Styling */
+.post-section {
+  background: var(--patel-light-blue) !important;
+  border-left: 5px solid var(--patel-orange) !important;
+  border-radius: 4px;
+  padding: 24px !important;
+  margin-top: 32px;
+}
+
+.post-section:nth-child(odd) {
+  background: var(--patel-light-orange) !important;
+  border-left-color: var(--patel-blue) !important;
+}
+
+.section-title {
+  color: var(--patel-blue) !important;
+  font-family: 'BBH Bartle', cursive;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 1em !important;
+}
+
+.post-section:nth-child(odd) .section-title {
+  color: var(--patel-orange) !important;
+}
+
+.section-list {
+  color: #555555;
+}
+
+.section-list a {
+  color: var(--patel-orange);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.section-list a:hover {
+  color: var(--patel-blue);
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, var(--patel-blue) 0%, #004080 100%);
+  color: white;
+  border-top: 4px solid var(--patel-orange);
+}
+
+footer p {
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .post-header {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  .post-body {
+    padding: 24px;
+  }
+}
