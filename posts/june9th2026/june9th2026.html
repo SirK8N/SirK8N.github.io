@@ -4,56 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Design is [really] hard</title>
+    <title>The Three Pass Method</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./post-style.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Freckle+Face&family=Sekuya&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Top Navigation Bar -->
-    <nav class="nav-bar">
-      <div class="nav-content">
-        <h1 class="nav-title">Pig + Si</h1>
-          <a href="../../index.html">TAKE ME HOME</a>
+    <!-- Minimal Header -->
+    <header class="paper-header">
+      <div class="header-nav">
+        <a href="../../index.html" class="back-link">← Home</a>
       </div>
-    </nav>
+    </header>
 
-    <div class="page-shell">
-      <div class="content">
-        <!-- Full Blog Post -->
-        <article class="full-post">
-          <div class="post-header">
-            <h1 class="post-title">The Three Pass Method</h1>
-            <a>Alternate Title: What I Do for Work ~ VI.IX.MMXXVI</a>
+    <!-- Research Paper Container -->
+    <main class="paper-container">
+      <article class="research-paper">
+        <!-- Paper Title Section -->
+        <div class="paper-title-section">
+          <h1 class="paper-title">The Three Pass Method</h1>
+          <p class="paper-subtitle">Alternate Title: What I Do for Work</p>
+          <div class="paper-meta">
+            <span class="author">Pig + Si</span>
+            <span class="date">June 9, 2026</span>
           </div>
+        </div>
 
-          <div class="post-body">
-            <div class="row">
-              <div class="column">
-                <a></a>
-              </div>
-              <div>
-                <h3>Here's some words</h3>
-              </div>
-            </div>
+        <!-- Abstract -->
+        <section class="paper-section abstract-section">
+          <h2 class="section-title">Abstract (a summary in plain language)</h2>
+          <p class="abstract-text">
+            This blog post is formatted similar to a typical research paper. The feeling of looking at a dense scientific paper
+             for the first time is confusing and overwhelming, filled with buzz words and academic terminology crafted to sound 
+             as smart as possible. I imagine that same feeling is the same as whenever I summarize what I do for work. In this post
+              I’m going to both explain how to read and digest a research paper AND what I’ll be doing this summer for my internship. 
+              Hopefully by the end you’ll have a better grasp on both.
+          </p>
+        </section>
 
+        <!-- Introduction -->
+        <section class="paper-section">
+          <h2 class="section-title">1. Introduction</h2>
+          <p>
+            In complex problem domains, a single analysis pass often proves insufficient. 
+            This paper explores the methodology behind sequential analysis passes.
+          </p>
+        </section>
 
-            <div class="post-section">
-              <h3 class="section-title">Related links</h3>
-                <a href="../index.html">Back to home</a></li>
-            </div>
-          </div>
-          
-        </article>
+        <!-- Main Content Section -->
+        <section class="paper-section">
+          <h2 class="section-title">2. Methodology</h2>
+          <p>
+            Here's where the core concepts are presented. The methodological framework provides 
+            structure and rigor to the analysis.
+          </p>
+          <h3 class="subsection-title">2.1 First Pass: Overview</h3>
+          <p>
+            Initial broad-strokes understanding of the problem domain.
+          </p>
+          <h3 class="subsection-title">2.2 Second Pass: Deep Dive</h3>
+          <p>
+            Detailed examination with refined focus on key elements.
+          </p>
+          <h3 class="subsection-title">2.3 Third Pass: Integration</h3>
+          <p>
+            Synthesis of findings into coherent conclusions.
+          </p>
+        </section>
 
-        <footer>
-          <p>&copy; 2026 Pig + Si. All moments preserved.</p>
-        </footer>
-      </div>
-    </div>
+        <!-- Conclusion -->
+        <section class="paper-section">
+          <h2 class="section-title">3. Conclusion</h2>
+          <p>
+            The iterative approach proves effective for complex analysis. 
+            Future work may explore automation of these passes and application across domains.
+          </p>
+        </section>
+
+        <!-- References -->
+        <section class="paper-section references-section">
+          <h2 class="section-title">References</h2>
+          <ul class="references-list">
+            <li>Related concepts and foundational work</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="paper-footer">
+      <p>&copy; 2026 Pig + Si. All moments preserved.</p>
+    </footer>
   </body>
 </html>

@@ -1,173 +1,239 @@
-/* Post-specific styling with Patel Orange & Blue theme */
+/* Research Paper Minimalist Design */
 
 :root {
-  --patel-orange: #9f2305;
-  --patel-blue: #003D7A;
-  --patel-light-blue: #E8F4FF;
-  --patel-light-orange: #FFF3E8;
-  --text-dark: #1A1A1A;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555555;
+  --text-light: #888888;
+  --border-color: #e0e0e0;
+  --background: #ffffff;
+  --accent: #2c3e50;
 }
 
-/* Google Fonts for Headers */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'BBH Bartle', cursive;
-  color: var(--patel-blue);
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 2.5em;
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: #fafafa;
+}
+
+/* Header */
+.paper-header {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-nav {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-link {
+  font-family: 'Source Sans 3', sans-serif;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+}
+
+/* Main Container */
+.paper-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.research-paper {
+  background-color: var(--background);
+  padding: 4rem 3.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+/* Title Section */
+.paper-title-section {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  text-align: center;
+}
+
+.paper-title {
+  font-family: 'Lora', serif;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 2em;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-  color: var(--patel-orange);
-}
-
-h3 {
-  font-size: 1.5em;
-  font-weight: 700;
-  margin: 1.2em 0 0.5em 0;
-}
-
-h4, h5, h6 {
-  font-size: 1.1em;
-  font-weight: 600;
-}
-
-a {
-  font-family: "Cormorant Garamond", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--patel-orange);
-}
-
-/* Post Header Styling */
-.post-header {
-  padding: 0px;
-}
-
-.nav-title {
-  font-family: "Cormorant Garamond";
-  padding: 0px;
-}
-
-.post-date {
-  color: var(--patel-orange);
-  font-weight: 700;
-  font-size: 0.95em;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.post-title {
-  color: var(--patel-blue);
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
   line-height: 1.2;
+  letter-spacing: -0.5px;
 }
 
-/* Featured Image */
-.post-featured-image {
-  border: 3px solid var(--patel-orange);
-  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.2);
+.paper-subtitle {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-style: italic;
+  margin: 0.5rem 0 1.5rem 0;
 }
 
-/* Post Body */
-.post-body {
-  background: #FFFFFF;
-  color: var(--text-dark);
+.paper-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  letter-spacing: 0.5px;
 }
 
-.post-main-content {
-  color: #424242;
-  font-size: 1.05em;
+.author, .date {
+  font-weight: 500;
 }
 
-.post-main-content p {
-  color: #555555;
-  margin-bottom: 1.5em;
+/* Sections */
+.paper-section {
+  margin-bottom: 2.5rem;
 }
 
-/* Section Styling */
-.post-section {
-  border-radius: 0px;
-  padding: 5px !important;
-  margin-top: 20px;
+.abstract-section {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 2px;
+  margin-bottom: 3rem;
 }
 
-.post-section:nth-child(odd) {
-  background: var(--patel-light-orange) !important;
-  border-left-color: var(--patel-blue) !important;
+.abstract-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+  font-style: italic;
 }
 
 .section-title {
-  color: var(--patel-blue) !important;
-  font-family: 'BBH Bartle', cursive;
-  font-size: 1.3em;
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 1em !important;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.post-section:nth-child(odd) .section-title {
-  color: var(--patel-orange) !important;
-}
-
-.section-list {
-  color: #555555;
-}
-
-.column {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.section-list a {
-  color: var(--patel-orange);
+.subsection-title {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
   font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  color: var(--text-primary);
+  margin: 1.5rem 0 0.75rem 0;
 }
 
-.section-list a:hover {
-  color: var(--patel-blue);
-  text-decoration: underline;
+/* Paragraphs */
+p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 0 1rem 0;
+}
+
+/* Lists */
+ul, ol {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.references-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.references-list li {
+  margin-bottom: 0.75rem;
+  padding-left: 2rem;
+  text-indent: -2rem;
+  color: var(--text-secondary);
+}
+
+.references-section {
+  border-top: 2px solid var(--border-color);
+  padding-top: 2rem;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
 }
 
 /* Footer */
-footer {
-  background: linear-gradient(135deg, var(--patel-blue) 0%, #004080 100%);
-  color: white;
-  border-top: 4px solid var(--patel-orange);
+.paper-footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+  background-color: #fafafa;
 }
 
-footer p {
-  color: white;
+.paper-footer p {
+  margin: 0;
+  color: var(--text-light);
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .post-header {
-    padding: 10px;
+  .research-paper {
+    padding: 2rem 1.5rem;
   }
 
-  h1 {
-    font-size: 2em;
+  .paper-title {
+    font-size: 2rem;
   }
 
-  h2 {
-    font-size: 1.6em;
+  .paper-subtitle {
+    font-size: 1.1rem;
   }
 
-  .post-body {
-    padding: 24px;
+  .paper-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .subsection-title {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
   }
 }
