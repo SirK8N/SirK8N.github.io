@@ -1,142 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pig + Si</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KADEN [j] TRIGUEIRO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
   <body>
-    <!-- Top Navigation Bar -->
-    <nav class="nav-bar">
-      <div class="nav-content">
-        <h1 class="nav-title">Pig + Si</h1>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#blog">Blog</a>
-        </div>
-      </div>
-    </nav>
-
-    <div class="page-shell">
-      <div class="floating-artworks">
-        <div class="floating-artwork art-1"></div>
-        <div class="floating-artwork art-2"></div>
-        <div class="floating-artwork art-3"></div>
-        <div class="floating-artwork art-4"></div>
-      </div>
-      
-      <div class="content">
-        <!-- Gallery Section with Featured Center & Side Images -->
-        <section id="gallery" class="gallery-section">
-          <!-- Featured Post (Center) -->
-          <div class="featured-container">
-            <div class="featured-date">June 8th, 2026</div>
-            <span class="post-tag tag-opinion">Memory</span>
-            <a href="/posts/june8th2026/june8th2026.html" class="featured-image-link">
-              <img src="image.png" alt="Lincoln Park Zoo" class="featured-image">
-            </a>
-            <h3 class="featured-title">Lincoln Park Zoo</h3>
-            <p class="post-tagline">The Zoo Here Is Free</p>
-          </div>
-
-          <!-- Side Gallery -->
-          <div class="side-gallery">
-            <!-- Left Post -->
-            <div class="gallery-item left-item">
-              <div class="gallery-date">June 9, 2026</div>              
-              <span class="post-tag tag-memory">Opinion</span>              
-              <a href="./posts/june9th2026/june9th2026.html" class="gallery-image-link">
-                <img src="./posts/june9th2026/photos/zoom-call.png" alt="Recipes and rhythms" class="gallery-image">
-              </a>
-              <h4>Recipes &amp; rhythms</h4>
-            </div>
-
-            <!-- Right Post -->
-            <div class="gallery-item right-item">
-              <div class="gallery-date">May 25, 2026</div>              <span class="post-tag tag-scratch">Scratch</span>              <a href="post3.html" class="gallery-image-link">
-                <img src="https://via.placeholder.com/200x300?text=Post+3" alt="Mountain adventures" class="gallery-image">
-              </a>
-              <h4>Mountain adventures</h4>
-            </div>
-          </div>
-        </section>
-
-        <section id="about" class="about-card">
-          <h2>Hello Family!</h2>
-          <p>Kaden had the brilliant idea of creating a blog of sorts to update how we are doing, share memories made, and document our adventures while here in Illinois! Kaden and I have been having a wonderful time while here in Evanston and Chicago to say the least!</p>
-        </section>
-
-        <section id="blog" class="blog">
-          <h2>All Posts</h2>
-          <div class="posts">
-            <article class="post">
-              <time datetime="2026-06-09">June 9th, 2026</time>
-              <span class="post-tag tag-memory">Memory</span>
-              <h3>Weekend reflections from home</h3>
-              <div class="post-content">
-                <p>Together we spent the morning planning our next little adventure, swapping ideas over coffee, and writing a fresh note for the family blog.</p>
-              </div>
-              
-              <div class="post-section">
-                <h4 class="section-title">📺 Things we're watching</h4>
-                <ul class="section-list">
-                  <li>A new series about travel and discovery</li>
-                  <li>Documentaries on sustainable living</li>
-                </ul>
-              </div>
-              
-              <div class="post-section">
-                <h4 class="section-title">💝 Things we recommend</h4>
-                <ul class="section-list">
-                  <li>A cozy new café downtown</li>
-                  <li>A book about slow living and intentionality</li>
-                </ul>
-              </div>
-              
-              <div class="post-links">
-                <a href="post1.html">Read more</a>
-              </div>
-            </article>
-            
-            <article class="post">
-              <time datetime="2026-06-01">June 1, 2026</time>
-              <span class="post-tag tag-opinion">Opinion</span>
-              <h3>Recipes, rhythms, and shared stories</h3>
-              <div class="post-content">
-                <p>She cooked, I listened, and we wrote about the small, warm habits that make our days feel grounded and bright.</p>
-              </div>
-              
-              <div class="post-section">
-                <h4 class="section-title">📺 Things we're watching</h4>
-                <ul class="section-list">
-                  <li>Cooking shows and culinary documentaries</li>
-                  <li>Films about family and connection</li>
-                </ul>
-              </div>
-              
-              <div class="post-section">
-                <h4 class="section-title">💝 Things we recommend</h4>
-                <ul class="section-list">
-                  <li>Fresh herbs from the farmers market</li>
-                  <li>Handwritten recipe journals</li>
-                </ul>
-              </div>
-              
-              <div class="post-links">
-                <a href="post2.html">Read more</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <footer>
-          <p>&copy; 2026 Pig + Si. All moments preserved.</p>
-        </footer>
-      </div>
+    <nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+        <img src="svg(2).svg" alt="Bootstrap" width="60" height="60">
+        </a>
     </div>
+    </nav>
+    <section>
+    <!-- HERO SPLASH W HEADSHOT -->
+    <div class="container-fluid d-flex align-items-center justify-content-center">
+        <h1 class="col-2 name">KADEN [j]</h1>
+        <img src="images/headshot.PNG" class="col-4">
+        <h1 class="col-2 name">TRIGU EIRO</h1>
+    </div>
+
+    </section>
+
+
+    <section>
+        
+    <!-- HEADER W LINKS -->
+    <div class="d-flex justify-content-center">
+    <div class="col-8 d-flex justify-content-center py-3 gradient-background"> 
+        <ul class="col-8 nav justify-content-between nav-pills" style="margin-left: 45px"> 
+            <li class="nav-item" id="bio">
+                <a href="#bio" class="nav-link" aria-current="page">I</a>
+            </li> <li class="nav-item">
+                <a href="#work" class="nav-link">II</a>
+            </li> 
+            <li class="nav-item">
+                <a href="#resume" class="nav-link">III</a>
+            </li> 
+            <li class="nav-item">
+                <a href="#" class="nav-link">IV</a>
+            </li> 
+            <li class="nav-item">
+                <a href="#" class="nav-link">V</a>
+            </li> 
+            <li class="nav-item">
+                <a href="#" class="nav-link">VI</a>
+            </li> 
+            
+        </ul> 
+    </div>
+    </div> 
+    </section id="bio">
+    <!-- ABOUT SECTION -->
+     <div class="container-fluid d-flex justify-content-center">
+     <div class="col-8 px-6 py-1 my-2 text-center"> 
+        <h2 class="">
+        <p class="display-5 libre-baskerville" style="font-size: 2rem;">computer generalist . deep learning . web development . data analysis . chipotle grillmeister . under graduate . teaching assistant . research fellow . 3d modeling . running fast . graphic design . generative programming . cs major . database systems . video editing . ubuntu linux . digital twin . software development . ground turkey . applied algorithms . loving Christ .</h1> 
+        <div class="col-lg-6 mx-auto"> 
+    
+        </div> 
+    </div>
+    </div>
+    <section>
+        <div class="container">
+
+        </div>
+    </section id="work">
+
+    <!-- PROJECTS -->
+     <div class="container px-4 py-5 libre-baskerville id="projects" style="color: grey;"> 
+        <h2 class="pb-2 border-bottom">Work</h2> 
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"> 
+            <div class="col"> 
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/dt.png');"> 
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Genesis-Embodied Digital Twin</h3> 
+                        <ul class="d-flex list-unstyled mt-auto"> <li class="me-auto"> 
+                             
+                        </li> <li class="d-flex align-items-center me-3"> 
+                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                <use xlink:href="#geo-fill"></use></svg> 
+                                <small>NU</small> 
+                            </li> 
+                            <li class="d-flex align-items-center"> 
+                                <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg> 
+                                <small>2026</small>
+                             </li>
+                            </ul> 
+                        </div>
+                    </div> 
+                </div> 
+                <div class="col"> 
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/TDDFT.png');"> 
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">TDDFT</h3> 
+                            <ul class="d-flex list-unstyled mt-auto"> 
+                                <li class="me-auto"> 
+                                    </li> 
+                                    <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg> 
+                                        <small>UIUC</small> </li> 
+                                    <li class="d-flex align-items-center"> <small>2025</small> </li>
+                            </ul> 
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="col"> 
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/pickleball.png');"> 
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pickleball Classifier</h3>
+                             <ul class="d-flex list-unstyled mt-auto">
+                                 <li class="me-auto"></li>
+                                     
+                                     <li class="d-flex align-items-center me-3"> 
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg> <small>UT-T</small> </li> <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration"><use xlink:href="#calendar3"></use></svg> <small>2025</small> </li> </ul> </div> </div> </div> </div> </div>
+
+    <section>
+    <!-- FOOTER -->
+    <div class="container"> 
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-3 border-light"> 
+            <div class="col-md-4 d-flex align-items-center"> 
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> 
+                    <img src="svg(2).svg" width="50" height="50"> 
+                </a> <span class="mb-3 mb-md-0 dela-gothic" style="font-size: 1rem;">100% human written code</span> 
+            </div> <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> 
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#" aria-label="github">
+                        <img src="images/github.png" alt="" height="20" width="20">
+                    </a>
+                </li> 
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#" aria-label="Facebook">
+                        <img src="images/linkedin.png" height="20" width="20">
+                    </a>
+                </li> 
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#" aria-label="Facebook">
+                        <img src="images/kaggle.png" height="20" width="44">
+                    </a>
+                </li> 
+            </ul> 
+        </footer> 
+    </div>
+    </section>
   </body>
+
 </html>
