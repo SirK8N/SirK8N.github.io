@@ -15,7 +15,7 @@
 
   <body>
     <nav class="navbar">
-    <div class="container">
+    <div class="container-fluid col-10">
         <a class="navbar-brand" href="#">
         <img src="svg(2).svg" alt="Bootstrap" width="60" height="60">
         </a>
@@ -23,10 +23,12 @@
     </nav>
     <section>
     <!-- HERO SPLASH W HEADSHOT -->
-    <div class="container-fluid d-flex align-items-center justify-content-center">
-        <h1 class="col-2 name">KADEN [j]</h1>
-        <img src="images/headshot.PNG" class="col-4">
-        <h1 class="col-2 name">TRIGU EIRO</h1>
+    <div class="container-fluid hero">
+        <div class="row d-flex align-items-center justify-content-center">
+            <h1 class="col-2 name">KADEN [j]</h1>
+            <img src="images/headshot.PNG" class="col-5">
+            <h1 class="col-3 name">TRIGU EIRO</h1>
+        </div>
     </div>
 
     </section>
@@ -64,7 +66,7 @@
     <section id="bio">
     <!-- ABOUT SECTION -->
      <div class="container-fluid d-flex justify-content-center">
-     <div class="col-8 px-6 py-1 my-2 text-center"> 
+     <div class="col-9 px-6 py-1 my-2 text-center"> 
         <h2 class="">
         <p class="display-5 libre-baskerville" style="font-size: 2rem;">computer generalist . deep learning . web development . data analysis . chipotle grillmeister . under graduate . teaching assistant . research fellow . 3d modeling . running fast . graphic design . generative programming . cs major . database systems . video editing . ubuntu linux . digital twin . software development . ground turkey . applied algorithms . loving Christ .</h1> 
         <div class="col-lg-6 mx-auto"> 
@@ -77,7 +79,7 @@
     <section id="work">
     <!-- PROJECTS -->
      <div class="container px-4 py-5 libre-baskerville id="projects" style="color: grey;"> 
-        <h2 class="pb-2 border-bottom">work</h2> 
+        <h2 class="pb-2">work</h2> 
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"> 
             <div class="col"> 
                 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/dt.png');"> 
@@ -139,7 +141,7 @@
     <section id="connect">
     <!-- CONNECT -->
     <div class="container px-4 py-5 libre-baskerville id="projects" style="color: grey;"> 
-        <h2 class="pb-2 border-bottom">connect</h2> 
+        <h2 class="pb-2">connect</h2> 
         <ul class="nav py-4 col-md-6 justify-content-between list-unstyled d-flex"> 
             <li class="ms-3">
                 <a class="text-body-secondary" href="#" aria-label="github">
@@ -206,6 +208,9 @@
         </footer> 
     </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js" rel="script"></script>
+    
   </body>
 
 </html>
